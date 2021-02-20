@@ -12,11 +12,11 @@ interface CardWithShadowProps {
 export const CardWithShadow: React.FC<CardWithShadowProps> = ({ body, className, featuredImageSource, title }) => {
     return (
         <div className={`card-with-shadow ${className}`}>
-            <div className="mb-4">
-            <img src={featuredImageSource} />
-            </div>
-            <h2>{title}</h2>
-            <p>{body}</p>
+          <div className="mb-4">
+            <img src={featuredImageSource} alt={title} />
+          </div>
+          <h2>{title}</h2>
+          <p>{body}</p>
         </div>
     )
 }
